@@ -1,21 +1,25 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #3d91cd;
-    color: white;
-    padding: 1em;
+    background-color: white;
+    color: #5ed880;
+    padding: 0.5 px;
     text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 nav ul {
     list-style-type: none;
-    padding: 0;
-    background-color: #3d91cd;
+    padding: 20 px;
+    background-color: #69a9d7;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 nav ul li {
@@ -31,7 +35,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #111;
+    background-color: #5ed880;
 }
 
 section {
@@ -47,4 +51,49 @@ article {
     border-bottom: 1px solid #ccc;
     padding-bottom: 1em;
     margin-bottom: 1em;
+}
+
+footer {
+    background-color: #70a1d6;
+    color: white;
+    text-align: center;
+    padding: 0.5 px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+label {
+    margin-top: 10px;
+    text-align: left;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #55a1d7;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #5ed880;
 }
