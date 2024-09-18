@@ -2,6 +2,10 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    background-image: url('Road 2.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
 }
 
 header {
@@ -28,7 +32,7 @@ nav ul li {
 
 nav ul li a {
     display: block;
-    color: white;
+    color: whitesmoke;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -54,7 +58,7 @@ article {
 }
 
 footer {
-    background-color: #70a1d6;
+    background-color: #3d91cd;
     color: white;
     text-align: center;
     padding: 0.5 px 0;
@@ -68,7 +72,7 @@ form {
     flex-direction: column;
     width: 100%;
     max-width: 600px;
-    margin: 0 auto;
+    margin-right: 50px;
 }
 
 label {
@@ -77,16 +81,19 @@ label {
 }
 
 input, textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
+    width: 99%;
+    padding: 1px;
+    margin-top: 1px;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
 
+label {
+    color:#5ed880;
+}
 button {
     margin-top: 20px;
-    padding: 10px;
+    padding: 1px;
     background-color: #55a1d7;
     color: white;
     border: none;
@@ -96,4 +103,14 @@ button {
 
 button:hover {
     background-color: #5ed880;
+}
+
+h3 {
+    color: #5ed880;
+}
+
+h4 {
+    color: #5ed880;
+    font-size: 16px;
+    margin-top: 20px
 }

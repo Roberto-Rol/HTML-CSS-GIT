@@ -6,7 +6,7 @@ function loadSection(section) {
     const content = document.getElementById('content');
     if (section === 'cars') {
         content.innerHTML = `
-            <h2>Cars & Auto Parts</h2>
+            <h2>Cars & Parts</h2>
             <div class="gallery">
                 <img src="car1.jpg" alt="Car 1">
                 <img src="car2.jpg" alt="Car 2">
@@ -21,8 +21,18 @@ function loadSection(section) {
                 <p>This is a sample blog post.</p>
             </article>
             <article>
-                <h3>New Blog Post Title</h3>
-                <p>This is a new blog post.</p>
+                <h3>Oil change for ZD30 Patrol Y61</h3>
+                <p>These are the recommended steps:</p>
+                <ul>
+                    <li><strong>Tools and materials:</strong> A wrench to release the filter cover, the filter, a wrench for the 22 mm cube/socket and the cube/socket, 8.2 l of engine oil (brand of your preference and 15w40, if possible), a funnel, and an oil tray.</li>
+                    <li><strong>Step 1:</strong> Remove the crankcase bolt/screw to extract the old oil.</li>
+                    <li><strong>Step 2:</strong> Make sure to put the screw back into the crankcase.</li>
+                    <li><strong>Step 3:</strong> Remove the old oil filter and replace it with the new one.</li>
+                    <li><strong>Step 4:</strong> Fill the engine with the new oil.</li>
+                    <li><strong>Step 5:</strong> Start the engine and check that everything is working well.</li>
+                    <li><strong>Step 6:</strong> Let the engine run for a few minutes and then turn it off.</li>
+                    <li><strong>Step 7:</strong> Check the oil level and verify that it is within the correct range.</li>
+                </ul>
             </article>
             <article>
                 <h3>How to Repair a Car</h3>
@@ -38,7 +48,7 @@ function loadSection(section) {
         `;
     } else if (section === 'links') {
         content.innerHTML = `
-            <h2>Links & Videos</h2>
+            <h2>Multimedia</h2>
             <ul>
                 <li><a href="#" onclick="loadSection('blog')">Go to Blog</a></li>
                 <li><a href="https://www.youtube.com/watch?v=example" target="_blank">Watch Video</a></li>
@@ -67,12 +77,12 @@ function handleFormSubmit(event) {
     const message = document.getElementById('message').value;
 
     // Message to the user
-    displayMessage(`Thank you for being part of 4 Your Car, ${name}! Your message has been sent.`);
+    displayMessage(`Thank you for being part of CarFix, ${name}! Your message has been sent.`);
 
     // Server possibility
 }
 
 function displayMessage(message) {
     const content = document.getElementById('content');
-    content.innerHTML = `<p>${message}</p>`;
+    content.innerHTML = `<h4>${message}</p>`;
 }
