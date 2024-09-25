@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - CarFix</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>CarFix</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="home.html" data-section="home">Home</a></li>
+            <li><a href="cars.html" data-section="cars">Cars & Parts</a></li>
+            <li><a href="blog.html" data-section="blog">Blog</a></li>
+            <li><a href="links.html" data-section="links">Multimedia</a></li>
+            <li><a href="contact.html" data-section="contact">Contact Us</a></li>
+        </ul>
+    </nav>
+    <section id="content">
+        <h2>Contact Us</h2>
+        <p>Get in touch with us.</p>
+        <form id="contactForm" onsubmit="handleFormSubmit(event)">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <div id="contactDetails">
+            <h3>Our Contact Details</h3>
+            <p><strong>Phone:</strong> +1-234-567-890</p>
+            <p><strong>Email:</strong> contact@carfix.com</p>
+            <p><strong>Address:</strong> 123 CarFix Street, San Juan, Alajuela, Costa Rica</p>
+            <div id="map"></div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 CarFix. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

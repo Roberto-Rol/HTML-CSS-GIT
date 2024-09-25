@@ -16,6 +16,14 @@ header {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+#content h2 {
+    color: white;
+}
+
+#content h2:hover {
+    background-color: #5ed880;
+}
+
 nav ul {
     list-style-type: none;
     padding: 20 px;
@@ -61,7 +69,7 @@ footer {
     background-color: #3d91cd;
     color: white;
     text-align: center;
-    padding: 0.5 px 0;
+    padding: 0.1 px 0;
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -89,8 +97,13 @@ input, textarea {
 }
 
 label {
-    color:#5ed880;
+    color:#7dfaa0;
 }
+
+label:hover {
+    background-color: #55a1d7
+}
+
 button {
     margin-top: 20px;
     padding: 1px;
@@ -106,11 +119,105 @@ button:hover {
 }
 
 h3 {
-    color: #5ed880;
+    color: #7dfaa0;
+}
+
+h3:hover {
+    background-color: #55a1d7;
 }
 
 h4 {
     color: #5ed880;
     font-size: 16px;
     margin-top: 20px
+}
+
+li, p {
+    color: white;
+}
+
+li:hover {
+    background-color: #55a1d7;
+}
+
+p:hover {
+    background-color: #55a1d7;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#contactForm {
+    flex: 1;
+    margin-right: 20px;
+}
+
+#contactDetails {
+    margin-top: 20px;
+    flex: 1;
+    max-width: 400px;
+}
+
+#map {
+    width: 100%;
+    height: 400px;
+    margin-top: 10px;
+}
+
+h5 {
+    color: rgb(3, 68, 198);
+    font-size: medium;    
+}
+
+h5:hover {
+    background-color: #55a1d7;
+}
+
+h6 {
+    font-size: medium;
+    align-content: center;
+    color: rgb(3, 68, 198);
+}
+
+h6:hover {
+    background-color: #55a1d7;
+}
+#content h6 {
+    align-items: center;
+}
+
+#car-brands {
+    padding: 5px;
+    color: white; /* Adjust text color for better visibility */
+    width: 60%;
+    display: flex;
+    align-self: center;
+    margin-left: 20px;
+}
+
+#brand-list li {
+    color: white; /* Set text color to blue */
+}
+
+#car-brands h2 {
+    color: white; /* Set text color to blue */
+}
+
+#car-brands-2 {
+    background-image: url('brands\\ 1.jpg');
+    background-repeat: no-repeat;
+    margin-right: 20px;
+    animation: moveImage 5s infinite alternate;
+}
+
+@keyframes moveImage {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(100px);
+    }
 }
