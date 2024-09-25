@@ -227,7 +227,7 @@ function loadScript(src) {
     document.head.appendChild(script);
 }
 
-loadScript('https://maps.googleapis.com/maps/api/js?key=AIzaSyCS6x18cKKGsT0iNt7iiLRgP0xCEDB9Cqg&callback=initMap');
+loadScript('https://maps.googleapis.com/maps/api/js?key=Key&callback=initMap');
 
 function addAnimation() {
     const style = document.createElement('style');
